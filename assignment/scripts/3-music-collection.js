@@ -35,22 +35,24 @@ console.log('Collection:', collection); // testing collection array to see the a
 // Console.log the number of items in the array.
 // Loop over the array and console.log each album's information formatted like: TITLE by ARTIST, published in YEAR.
 
-
 function showCollection( anArray ){ // created showCollection function with a parameter as anArray because we want an array there 
-    console.log('Length:', anArray.length);
-    for (let i=0; i<anArray.length; i++){
-        console.log(anArray.title, 'by', anArray.artist, ',', ' published in ', anArray.year);
+    console.log('Length:', anArray.length); // console.log the number of items in the array.
+    for (let i=0; i<anArray.length; i++){ // created a 'for' loop to console.log each album with the formatted information
+        let album = anArray[i]
+        console.log(anArray[i].title, 'by', anArray[i].artist, ',', 'published in', anArray[i].yearPublished);
     }
 } // end showCollection
 
 // Test the showCollection function.
+showCollection( collection ); // testing with the collection array created above
 
-let secondCollection = [  // creating a new collection here to test the showCollection function with a different collection
-    {title: 'Map of the Soul: 7', artist: 'BTS', year: 2020},
-    {title: '30', artist: 'Adele', year: 2021},
-    {title: 'Traumatize', artist: 'Megan Thee Stallion', year: 2022} ] // end secondCollection
+const secondCollection = [  // creating a new collection here to test the showCollection function with a different collection
+    {title: 'Map of the Soul: 7', artist: 'BTS', yearPublished: 2020},
+    {title: '30', artist: 'Adele', yearPublished: 2021},
+    {title: 'Traumatize', artist: 'Megan Thee Stallion', yearPublished: 2022} 
+] // end secondCollection
 
-showCollection( secondCollection );
+showCollection( secondCollection ); // testing with the second collection
 
 //
 //
