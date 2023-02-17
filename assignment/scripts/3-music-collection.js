@@ -15,5 +15,19 @@ function addToCollection( title, artist, yearPublished ){ // created addToCollec
     return album; // return object album
 } // end addToCollection
 
-addToCollection('Be', 'BTS', '2020'); // input for parameters
+console.log( addToCollection('Be', 'BTS', 2020) );
+
+// Test the addToCollection function:
+// Add 6 albums to your collection. Aim to have a mix of both same and different artists and published years.
+// Console.log each album as added using the returned value.
+// After all are added, console.log the collection array.
+
+
+console.log( addToCollection('Proof', 'BTS', 2022) ); // added albums
+console.log( addToCollection('Jack in the Box', 'J-Hope', 2022) );
+console.log( addToCollection('Indigo', 'RM', 2022) );
+console.log( addToCollection('Fearless', 'Taylor Swift', 2008) );
+console.log( addToCollection('thank u, next', 'Ariana Grande', 2019) );
+console.log( addToCollection('Justice', 'Justin Bieber', 2021) );
 console.log('Collection:', collection); // testing collection array to see the album
+
